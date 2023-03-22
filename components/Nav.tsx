@@ -5,30 +5,41 @@ import { RiServiceLine } from "react-icons/ri";
 
 const Nav = () => {
   return (
-    <div>
+    <div className="z-2 fixed left-1/3 bottom-2 flex justify-center ">
       <nav
-        className="bg-black opacity-90 w-full  px-[7px] py-[1.7rem]
-     fixed z-30 left-1/2 translate-x-[50%] flex gap-[0.8rem] 
-     rounded-[3rem] 
-     blur-lg  
+        className="h-15 flex  w-auto translate-x-[50%] justify-center
+       gap-[0.8rem] rounded-[3rem] bg-black px-[7px] py-[1rem] 
+     align-middle  opacity-90
      "
       >
         <a
           href="#"
-          className="bg-transparent p-[0.9rem] rounded-[50%] flex text-emerald-400 text-lg"
+          className="mx-1 ml-2 flex h-7 w-7 rounded-[50%]   bg-transparent px-1 py-1 text-lg  text-white hover:opacity-70 active:bg-inherit active:bg-slate-100 active:text-black"
         >
           <AiOutlineHome />
         </a>
-        <a href="#">
+        <a
+          href="#"
+          className="mx-1 flex h-7 w-7 rounded-[50%]   bg-transparent  px-1    py-1 text-lg  text-white hover:opacity-70 active:bg-inherit active:bg-slate-100 active:text-black"
+        >
           <AiOutlineUser />
         </a>
-        <a href="#">
+        <a
+          href="#"
+          className="mx-1 flex h-7 w-7 rounded-[50%] bg-transparent px-1  py-1    text-lg  text-white hover:opacity-70 active:bg-inherit active:bg-slate-100 active:text-black"
+        >
           <BiBook />
         </a>
-        <a href="#">
+        <a
+          href="#"
+          className="mx-1  flex h-7 w-7 rounded-[50%] bg-transparent px-1  py-1  text-lg text-white hover:opacity-70   active:bg-inherit   active:bg-slate-100 active:text-black"
+        >
           <BiMessageDetail />
         </a>
-        <a href="#">
+        <a
+          href="#"
+          className="mx-1 mr-2 flex h-7 w-7 rounded-[50%]  bg-transparent px-1 py-1 text-lg text-white active:bg-inherit   active:bg-slate-100 active:text-black"
+        >
           <RiServiceLine />
         </a>
       </nav>
