@@ -1,7 +1,9 @@
 import React from "react";
 
 const Footer = () => {
-  return <div className="w-fuz-[0]ll  fixed h-28"> Footer</div>;
+  return (
+    <div className="h-[10vh] w-full bg-teal-500 text-center  opacity-90" />
+  );
 };
 
 export default Footer;

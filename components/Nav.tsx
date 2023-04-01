@@ -4,41 +4,58 @@ import { BiBook, BiMessageDetail } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 
 const Nav = () => {
+  const [activNav, setActivNav] = React.useState("header");
   return (
-    <div className="z-2 fixed left-1/3 bottom-2 flex justify-center ">
+    <div className="fixed bottom-2  z-10 m-auto flex justify-center sm:left-1/3 ">
       <nav
-        className="h-15 flex  w-auto translate-x-[50%] justify-center
+        className="flex  w-auto translate-x-[50%] justify-center
        gap-[0.8rem] rounded-[3rem] bg-black px-[7px] py-[1rem] 
      align-middle  opacity-90
      "
       >
         <a
-          href="#"
-          className="mx-1 ml-2 flex h-7 w-7 rounded-[50%]   bg-transparent px-1 py-1 text-lg  text-white hover:opacity-70 active:bg-inherit active:bg-slate-100 active:text-black"
+          href="#header"
+          onClick={() => setActivNav("header")}
+          className={` 
+          mx-1 ml-2 flex h-7 w-7 rounded-[50%]   bg-transparent px-1 py-1 text-lg  text-white hover:opacity-70 active:bg-inherit active:bg-slate-100 active:text-black ${
+            activNav === "header" && "bg-slate-100 text-black"
+          }`}
         >
           <AiOutlineHome />
         </a>
         <a
-          href="#"
-          className="mx-1 flex h-7 w-7 rounded-[50%]   bg-transparent  px-1    py-1 text-lg  text-white hover:opacity-70 active:bg-inherit active:bg-slate-100 active:text-black"
+          href="#about"
+          onClick={() => setActivNav("about")}
+          className={`mx-1 flex h-7 w-7 rounded-[50%]   bg-transparent  px-1    py-1 text-lg  text-white hover:opacity-70 active:bg-inherit active:bg-slate-100 active:text-black ${
+            activNav === "about" ? "bg-slate-100 text-black" : ""
+          }`}
         >
           <AiOutlineUser />
         </a>
         <a
-          href="#"
-          className="mx-1 flex h-7 w-7 rounded-[50%] bg-transparent px-1  py-1    text-lg  text-white hover:opacity-70 active:bg-inherit active:bg-slate-100 active:text-black"
+          href="#experience"
+          onClick={() => setActivNav("experience")}
+          className={`mx-1 flex h-7 w-7 rounded-[50%] bg-transparent px-1  py-1    text-lg  text-white hover:opacity-70 active:bg-inherit active:bg-slate-100 active:text-black ${
+            activNav === "experience" ? "bg-slate-100 text-black" : ""
+          }`}
         >
           <BiBook />
         </a>
         <a
-          href="#"
-          className="mx-1  flex h-7 w-7 rounded-[50%] bg-transparent px-1  py-1  text-lg text-white hover:opacity-70   active:bg-inherit   active:bg-slate-100 active:text-black"
+          href="#portfolio"
+          onClick={() => setActivNav("portfolio")}
+          className={`mx-1  flex h-7 w-7 rounded-[50%] bg-transparent px-1  py-1  text-lg text-white hover:opacity-70   active:bg-inherit   active:bg-slate-100 active:text-black ${
+            activNav === "portfolio" ? "bg-slate-100 text-black" : ""
+          }`}
         >
           <BiMessageDetail />
         </a>
         <a
-          href="#"
-          className="mx-1 mr-2 flex h-7 w-7 rounded-[50%]  bg-transparent px-1 py-1 text-lg text-white active:bg-inherit   active:bg-slate-100 active:text-black"
+          href="#contact"
+          onClick={() => setActivNav("contact")}
+          className={`mx-1 mr-2 flex h-7 w-7 rounded-[50%]  bg-transparent px-1 py-1 text-lg text-white active:bg-inherit   active:bg-slate-100 active:text-black ${
+            activNav === "contact" ? "bg-slate-100 text-black" : ""
+          }`}
         >
           <RiServiceLine />
         </a>
