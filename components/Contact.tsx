@@ -1,14 +1,14 @@
 import React from "react";
 import { AiFillGithub, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
-const Contsct = () => {
+const Contact = () => {
   return (
     <section id="contact" className="my-3 h-auto min-h-[50vh] w-full">
       <div className="m-5 text-center text-3xl font-extrabold text-white ">
         Contact me
       </div>
-      <div className="block justify-center  align-middle sm:flex">
-        <div className="m-auto h-44  w-4/5 rounded-2xl  bg-black text-center text-white opacity-60  sm:m-2  sm:w-1/4 ">
+      <div className="block justify-center  align-middle md:flex">
+        <div className="m-auto h-44  w-4/5 rounded-2xl  bg-black text-center text-white opacity-60  md:m-2  md:w-1/4 ">
           <AiOutlineMail className="m-auto my-2 h-7 w-7 text-base text-teal-500" />
           <div className="text-center text-2xl  font-bold text-white">
             Email
@@ -17,7 +17,7 @@ const Contsct = () => {
             artur.grzebski69@gmail.com
           </div>
         </div>
-        <div className="m-auto h-44 w-4/5 rounded-2xl  bg-black text-center text-white opacity-60  sm:m-2  sm:w-1/4 ">
+        <div className="m-auto h-44 w-4/5 rounded-2xl  bg-black text-center text-white opacity-60  md:m-2  md:w-1/4 ">
           <AiOutlinePhone className="m-auto my-2 h-7 w-7 text-base text-teal-500" />
           <div className="text-center text-2xl  font-bold text-white">
             Phone
@@ -27,7 +27,7 @@ const Contsct = () => {
           </div>
         </div>
 
-        <div className="m-auto h-44  w-4/5 rounded-2xl bg-black text-center text-white opacity-60  sm:m-2  sm:w-1/4 ">
+        <div className="m-auto h-44  w-4/5 rounded-2xl bg-black text-center text-white opacity-60  md:m-2  md:w-1/4 ">
           <AiFillGithub className="m-auto my-2 h-7 w-7 text-base text-teal-500" />
           <div className="m-auto text-center text-2xl  font-bold text-white">
             GitHub
@@ -41,4 +41,4 @@ const Contsct = () => {
   );
 };
 
-export default Contsct;
+export default Contact;

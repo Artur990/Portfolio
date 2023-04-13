@@ -10,22 +10,21 @@ const Experience = () => {
     "Redux",
     "TypeScript",
     "React Query",
-    "Styled",
-    "Components",
+    "Styled Components",
     "Tailwind CSS",
     "MaterialUI",
-    "Unit testwith jest/React",
+    "Unit test jest/React",
     "Testing Library",
     "E2E test Cypress",
     "Git",
   ];
   return (
-    <section id="experience">
+    <section id="exp" className="my-3">
       <div className="m-5 text-center text-3xl font-extrabold text-white">
         My Experience
       </div>
-      <div className="px-32 ">
-        <div className="m-auto flex  h-80 w-2/3 flex-col flex-wrap rounded-2xl bg-black p-5 text-center text-white  opacity-60   ">
+      <div className="sm:px-26 px-20 md:px-32 ">
+        <div className="  m-auto flex  h-[57rem] w-[100%] flex-col  flex-wrap overflow-hidden  rounded-2xl bg-black p-5 text-center text-white opacity-60 sm:h-[30rem] md:h-[25rem]   lg:w-[90%]   ">
           {ary.map((e, i) => {
             return (
               <div
