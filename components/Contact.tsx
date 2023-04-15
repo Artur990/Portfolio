@@ -14,7 +14,7 @@ const Contact = () => {
             Email
           </div>
           <div className=" text-center text-lg font-bold text-gray-300">
-            artur.grzebski69@gmail.com
+            artur.grzebski@icloud.com
           </div>
         </div>
         <div className="m-auto h-44 w-4/5 rounded-2xl  bg-black text-center text-white opacity-60  md:m-2  md:w-1/4 ">

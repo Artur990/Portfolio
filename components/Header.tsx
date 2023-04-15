@@ -33,19 +33,16 @@ const Header = () => {
           Hi, I&apos;m Artur!
         </div>
         <div className="w-full text-center text-xl text-white md:w-[80%] md:text-start">
-          Welcome to my portfolio! I am a Frontend Developer, I develop
-          programming skills, I provide modern and websites. I try to share my
-          knowledge.
+          I create modern websites and share my knowledge. I follow industry
+          trends to create great websites. Thanks for visiting my portfolio!
         </div>
         <div className="my-0 flex justify-center align-middle md:my-5 md:justify-start">
-          {/* <a href="/public/CV.pdf" download> */}
           <button
             onClick={handleDownload}
-            className="m-1 rounded-lg bg-teal-500 px-5 py-1 text-lg md:py-3   md:px-14 "
+            className="m-1 rounded-lg bg-teal-500 px-5 py-1 text-lg md:py-1   md:px-14 "
           >
             Dwonload CV
           </button>
-          {/* </a> */}
           <button
             onClick={handleClickScrollContact}
             className="m-1 rounded-lg border-2  border-solid border-teal-500  bg-white px-14 py-2  text-lg  text-teal-500 "

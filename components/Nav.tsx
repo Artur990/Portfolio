@@ -5,11 +5,12 @@ import { RiServiceLine } from "react-icons/ri";
 
 const Nav = () => {
   const [activNav, setActivNav] = React.useState("header");
+
   return (
-    <div className="fixed bottom-3 z-10 flex h-14 w-full justify-start sm:left-1/3 ">
-      <div className="">
+    <div className=" fixed bottom-3 z-10 flex h-14 w-full ">
+      <div className="flex h-full w-full justify-center ">
         <nav
-          className="flex w-auto translate-x-[25%] justify-center
+          className="flex w-auto  
        gap-[0.8rem] rounded-[3rem] bg-black px-[7px] py-[1rem]
      align-middle  opacity-90
      "

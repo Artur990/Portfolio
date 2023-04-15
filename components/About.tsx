@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { FaAward } from "react-icons/fa";
 const About = () => {
@@ -10,12 +9,10 @@ const About = () => {
       <div className="sm:px-26 mt-3 block h-auto   min-h-[50vh] w-full items-center justify-around p-10 px-20  align-middle md:flex md:px-32 ">
         <article className=" h-auto w-full md:w-[50%] ">
           {" "}
-          <Image
-            width={320}
-            height={320}
-            src="/22.jpg"
+          <img
+            src="rocketdab.png"
             alt="foto"
-            className="degre md:h-120 md:w-120 m-auto h-80 w-80 items-center  justify-center rounded-xl"
+            className="degre m-auto h-96 w-96 items-center justify-center rounded-xl  md:h-[30rem] md:w-[30rem]"
           />
         </article>
         <article className=" mt-4 h-auto w-full md:w-[50%]">
@@ -40,14 +37,17 @@ const About = () => {
             </div>
           </div>
           <p className="m-1 text-center text-xl font-bold text-white md:m-6">
-            Young, self-motivated React/Frontend Developer truly enthusiastic
-            about providing products with great user experience. I pay attention
-            to details because, I like when something I do is working perfectly
-            and looking amazing. When I writing code for application, I pay a
-            lot of attention to code clarity, user experience and performance. I
-            find learning new thing fascination and because of that - can learn
-            fast. I like challenges, I like meeting new people and helping
-            people.
+            As a React/Frontend Developer, I am driven by my passion to create
+            exceptional products that deliver an outstanding user experience.
+            With an eye for detail, I strive for perfection in every project I
+            undertake. I take pride in ensuring that my work is not only
+            visually stunning but also functions seamlessly. When coding an
+            application, I focus on enhancing user experience, optimizing
+            performance, and maintaining code clarity. My insatiable curiosity
+            drives me to constantly explore new technologies and techniques,
+            enabling me to learn quickly and adapt to any challenge that comes
+            my way. I thrive in collaborative environments, enjoy meeting new
+            people, and take great pleasure in helping others.
           </p>
         </article>
       </div>
