@@ -85,13 +85,13 @@ const Portfolio = () => {
               <div className="my-5 flex justify-center align-middle md:my-2">
                 <Link
                   href={event.gitHub}
-                  className="m-1 rounded-lg bg-teal-500 px-7 py-1  text-lg  md:px-2 md:py-0  md:text-lg lg:py-2 xl:py-2 xl:px-10  xl:text-xl xl:font-bold"
+                  className="m-1 rounded-lg bg-teal-500 px-7 py-1  text-lg  md:px-2 md:py-0  md:text-lg lg:py-2 xl:py-2 xl:px-10 xl:text-xl xl:font-bold"
                 >
                   GitHub
                 </Link>
                 <Link
                   href={event.liveDemo}
-                  className="m-1 rounded-lg border-2  border-solid border-teal-500  bg-white px-7 py-1 text-lg text-teal-500  md:px-4  md:py-0 xl:py-0 xl:px-8  xl:text-xl xl:font-bold "
+                  className="m-1 rounded-lg border-2  border-solid border-teal-500  bg-white px-7 py-1 text-lg text-teal-500  md:px-2 md:py-0 lg:py-2 xl:py-2 xl:px-10  xl:text-xl xl:font-bold "
                 >
                   Live Demo
                 </Link>

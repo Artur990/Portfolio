@@ -9,13 +9,13 @@ const Header = () => {
     }
   };
   function handleDownload() {
-    fetch("/public/CV.pdf")
+    fetch("/rocketdab.png")
       .then((response) => response.blob())
       .then((blob) => {
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
-        a.download = "CV.pdf";
+        a.download = "rocketdab.pngf";
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
