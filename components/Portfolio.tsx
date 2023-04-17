@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Portfolio = () => {
+export const Portfolio = () => {
   const arry = [
     {
       id: 1,
@@ -58,50 +58,48 @@ const Portfolio = () => {
     },
   ];
   return (
-    <div
+    <section
       id="portfolio"
-      className="z-1  relative h-auto    w-full    py-20 px-5  md:px-24  lg:px-32 "
+      className="z-1 relative h-auto w-full py-10 px-4 md:py-10 md:px-4 lg:px-32"
     >
-      <div className="m-1 text-center text-3xl font-extrabold text-white md:m-5">
+      <h2 className="my-5 text-center text-3xl font-extrabold text-white">
         My Portfolio
-      </div>
-      <div className=" grid  grid-cols-1    gap-4 md:grid-cols-2 lg:grid-cols-3">
+      </h2>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
         {arry.map((event) => {
           return (
-            <div
+            <article
               key={event.id}
-              className="block justify-center rounded-xl bg-black p-2  transition delay-[0.5s] ease-in-out hover:scale-[105%]  "
+              className="block justify-center rounded-xl bg-black p-0 transition delay-[0.5s] ease-in-out hover:scale-[105%] md:p-4"
             >
               <Image
                 width={300}
                 height={300}
                 src={event.img}
                 alt=""
-                className="m-auto my-4 h-[60%] w-[90%] 	snap-center justify-center rounded-md"
+                className="m-auto my-4 h-[60%] w-[90%] snap-center justify-center rounded-md"
               />
-              <div className="my-4 text-center text-xl font-bold text-white">
+              <h3 className="my-2 text-center text-xl font-bold text-white">
                 {event.title}
-              </div>
-              <div className="my-5 flex justify-center align-middle md:my-2">
+              </h3>
+              <div className="my-4 flex justify-center align-middle md:my-2">
                 <Link
                   href={event.gitHub}
-                  className="m-1 rounded-lg bg-teal-500 px-7 py-1  text-lg  md:px-2 md:py-0  md:text-lg lg:py-2 xl:py-2 xl:px-10 xl:text-xl xl:font-bold"
+                  className="m-1 rounded-lg bg-teal-500 px-10 py-2 text-lg md:px-5 md:py-1 lg:px-8 lg:text-base xl:py-2 xl:px-3 xl:text-xl xl:font-bold"
                 >
                   GitHub
                 </Link>
                 <Link
                   href={event.liveDemo}
-                  className="m-1 rounded-lg border-2  border-solid border-teal-500  bg-white px-7 py-1 text-lg text-teal-500  md:px-2 md:py-0 lg:py-2 xl:py-2 xl:px-10  xl:text-xl xl:font-bold "
+                  className="m-1 rounded-lg border-2 border-solid border-teal-500 bg-white px-10 py-2 text-lg text-teal-500 md:px-5 md:py-1 lg:px-8 lg:text-base xl:py-2 xl:px-3 xl:text-xl xl:font-bold"
                 >
                   Live Demo
                 </Link>
               </div>
-            </div>
+            </article>
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
-
-export default Portfolio;

@@ -3,11 +3,11 @@ import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook, BiMessageDetail } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 
-const Nav = () => {
+export const Nav = () => {
   const [activNav, setActivNav] = React.useState("header");
 
   return (
-    <div className=" fixed bottom-3 z-10 flex h-14 w-full ">
+    <section className=" fixed bottom-3 z-10 flex h-14 w-full ">
       <div className="flex h-full w-full justify-center ">
         <nav
           className="flex w-auto  
@@ -63,8 +63,6 @@ const Nav = () => {
           </a>
         </nav>
       </div>
-    </div>
+    </section>
   );
 };
-
-export default Nav;
