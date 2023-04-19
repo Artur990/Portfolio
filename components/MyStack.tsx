@@ -1,6 +1,11 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
+
 import { BsFillPatchCheckFill } from "react-icons/bs";
-export const Experience = () => {
+
+export const MyStack = () => {
+  const id = uuidv4();
+
   const ary = [
     "JavaScript",
     "Node.js",
@@ -19,16 +24,16 @@ export const Experience = () => {
     "Git",
   ];
   return (
-    <section id="exp" className="my-3">
+    <section id="myStack" className="my-3 min-w-[400px]">
       <h2 className="m-5 text-center text-3xl font-extrabold text-white">
-        My Experience
+        My Stack
       </h2>
       <div className="sm:px-26 px-20 md:px-32 ">
         <div className="  m-auto flex  h-[57rem] w-[100%] flex-col  flex-wrap overflow-hidden  rounded-2xl bg-black p-5 text-center text-white opacity-60 sm:h-[30rem] md:h-[25rem]   lg:w-[90%]   ">
-          {ary.map((e, i) => {
+          {ary.map((e) => {
             return (
               <article
-                key={i}
+                key={id}
                 className="m-2 flex items-center justify-items-center  p-1 align-middle"
               >
                 <BsFillPatchCheckFill className="m-1 text-emerald-500" />

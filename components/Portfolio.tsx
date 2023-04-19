@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 export const Portfolio = () => {
@@ -60,9 +59,9 @@ export const Portfolio = () => {
   return (
     <section
       id="portfolio"
-      className="z-1 relative h-auto w-full py-10 px-4 md:py-10 md:px-4 lg:px-32"
+      className="z-1 h-auto w-full min-w-[400px] py-10 px-4 md:py-10 md:px-4 lg:px-32"
     >
-      <h2 className="my-5 text-center text-3xl font-extrabold text-white">
+      <h2 className="my-5 text-center  text-3xl font-extrabold text-white">
         My Portfolio
       </h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -70,7 +69,7 @@ export const Portfolio = () => {
           return (
             <article
               key={event.id}
-              className="block justify-center rounded-xl bg-black p-0 transition delay-[0.5s] ease-in-out hover:scale-[105%] md:p-4"
+              className="block justify-center rounded-xl bg-black p-2 transition delay-[0.5s] ease-in-out hover:scale-[105%] md:p-4"
             >
               <Image
                 width={300}
@@ -83,18 +82,16 @@ export const Portfolio = () => {
                 {event.title}
               </h3>
               <div className="my-4 flex justify-center align-middle md:my-2">
-                <Link
-                  href={event.gitHub}
-                  className="m-1 rounded-lg bg-teal-500 px-10 py-2 text-lg md:px-5 md:py-1 lg:px-8 lg:text-base xl:py-2 xl:px-3 xl:text-xl xl:font-bold"
-                >
-                  GitHub
-                </Link>
-                <Link
-                  href={event.liveDemo}
-                  className="m-1 rounded-lg border-2 border-solid border-teal-500 bg-white px-10 py-2 text-lg text-teal-500 md:px-5 md:py-1 lg:px-8 lg:text-base xl:py-2 xl:px-3 xl:text-xl xl:font-bold"
-                >
-                  Live Demo
-                </Link>
+                <a href={event.gitHub} target="blanket">
+                  <button className="m-1 rounded-lg border-2 border-solid border-gray-700 bg-teal-500 px-11 py-3 text-lg font-medium hover:bg-teal-700 md:px-7 md:py-2 lg:py-2 lg:px-8 lg:text-lg xl:py-2 xl:px-5 xl:text-xl">
+                    GitHub
+                  </button>
+                </a>
+                <a href={event.liveDemo} target="blanket">
+                  <button className="m-1 rounded-lg border-2 border-solid border-teal-500 bg-white px-11 py-3 text-lg font-medium text-gray-800 hover:bg-gray-400 md:px-7 md:py-2 lg:py-2 lg:px-8 lg:text-lg xl:py-2 xl:px-5 xl:text-xl">
+                    Live Demo
+                  </button>
+                </a>
               </div>
             </article>
           );

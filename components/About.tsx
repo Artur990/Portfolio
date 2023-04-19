@@ -3,7 +3,10 @@ import React from "react";
 import { FaAward } from "react-icons/fa";
 export const About = () => {
   return (
-    <section id="about" className="h-auto min-h-screen w-full sm:min-h-[90vh]">
+    <section
+      id="about"
+      className="sm:min-h-[90vh]min-w-[400px] h-auto min-h-screen w-full "
+    >
       <h1 className="m-5 text-center text-3xl font-extrabold text-white">
         About me
       </h1>
@@ -19,23 +22,23 @@ export const About = () => {
         </article>
         <article className="mt-4 flex h-full w-full flex-col justify-between md:mt-0 md:w-[50%]">
           <div className="flex justify-center ">
-            <div className="mx-6 my-2 h-32 w-1/2 rounded-md bg-black opacity-60 md:w-1/4">
+            <div className="md:mx- mx-6 my-2 h-32 w-1/2 rounded-md bg-black opacity-60 md:w-auto md:p-2 lg:px-4 lg:py-2">
               <FaAward className="mx-auto my-2 h-7 w-7 text-base text-teal-500" />
-              <div className="text-center text-xl font-bold text-white">
+              <h3 className="text-center text-xl font-bold text-white">
                 Experience
-              </div>
-              <div className="text-center text-lg font-bold text-gray-300">
+              </h3>
+              <h4 className="text-center text-lg font-bold text-gray-300">
                 2 Years Work
-              </div>
+              </h4>
             </div>
-            <div className="mx-6 my-2 h-32 w-1/2 rounded-md bg-black opacity-60 md:w-1/4">
+            <div className="mx-6 my-2 h-32 w-1/2 rounded-md bg-black opacity-60  md:w-auto md:p-2 lg:p-4 lg:py-2">
               <FaAward className="mx-auto my-2 h-7 w-7 text-base text-teal-500" />
-              <div className="text-center text-xl font-bold text-white">
+              <h3 className="text-center text-xl font-bold text-white">
                 Projects
-              </div>
-              <div className="text-center text-lg font-bold text-gray-300">
+              </h3>
+              <h4 className="text-center text-lg font-bold text-gray-300">
                 +10 projects
-              </div>
+              </h4>
             </div>
           </div>
           <p className="m-1 text-center text-xl font-bold text-white md:m-6 md:text-left">

@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { GFS_Didot } from "next/font/google";
+import Layout from "../../components/Layout";
 
 const gfs_Didot = GFS_Didot({
   subsets: ["greek"],
@@ -9,8 +10,10 @@ const gfs_Didot = GFS_Didot({
 });
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${gfs_Didot.variable} font-sans`}>
-      <Component {...pageProps} />;
+    <main>
+      <Layout>
+        <Component {...pageProps} />;
+      </Layout>
     </main>
   );
 }
