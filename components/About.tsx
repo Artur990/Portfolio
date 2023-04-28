@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { FaAward } from "react-icons/fa";
+import Paragraph from "./ui/Paragraph";
 export const About = () => {
   return (
     <section
@@ -41,7 +42,8 @@ export const About = () => {
               </h4>
             </div>
           </div>
-          <p className="m-1 text-center text-xl font-bold text-white md:m-6 md:text-left">
+          {/* <p className="m-1 text-center text-xl font-bold text-white md:m-6 md:text-left"> */}
+          <Paragraph className="max-w-xl lg:text-left">
             As a React/Frontend Developer, I am driven by my passion to create
             exceptional products that deliver an outstanding user experience.
             With an eye for detail, I strive for perfection in every project I
@@ -53,7 +55,7 @@ export const About = () => {
             enabling me to learn quickly and adapt to any challenge that comes
             my way. I thrive in collaborative environments, enjoy meeting new
             people, and take great pleasure in helping others.
-          </p>
+          </Paragraph>
         </article>
       </div>
     </section>
