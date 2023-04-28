@@ -24,7 +24,7 @@ export const Header = () => {
             trends to create great websites. Thanks for visiting my portfolio!
           </p>
           <div className="flex justify-center space-x-4 md:justify-start">
-            <a href="/public/rocketdab.png">
+            <a href="CV-ArturG..pdf" download="CV-ArturG..pdf">
               <button className="rounded-lg bg-teal-500 px-8 py-2 text-lg text-gray-800 hover:bg-teal-700">
                 Download CV
               </button>
@@ -40,6 +40,7 @@ export const Header = () => {
         <section className="my-auto px-4 md:w-1/2 md:px-0">
           <div className="flex justify-center">
             <Image
+              priority
               width={384}
               height={384}
               src="/hero.webp"
