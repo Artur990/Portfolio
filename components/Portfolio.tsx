@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Article from "./ui/Article";
+import Article from "./Article";
 import { portfolioArr } from "@/data/potfolioArr";
 export const TPortfolio = typeof portfolioArr;
 export const Portfolio = () => {

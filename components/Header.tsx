@@ -24,10 +24,6 @@ export const Header = () => {
             I create modern websites and share my knowledge. I follow industry
             trends to create great websites. Thanks for visiting my portfolio!
           </Paragraph>
-          {/* <p className="mb-8 text-center text-lg text-white md:text-left md:text-xl">
-            I create modern websites and share my knowledge. I follow industry
-            trends to create great websites. Thanks for visiting my portfolio!
-          </p> */}
           <div className="flex justify-center space-x-4 md:justify-start">
             <a href="CV-ArturG..pdf" download="CV-ArturG..pdf">
               <button className="rounded-lg bg-teal-500 px-8 py-2 text-lg text-gray-800 hover:bg-teal-700">
