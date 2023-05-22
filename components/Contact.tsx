@@ -21,11 +21,16 @@ export const Contact = () => {
     }),
     onSubmit: (values, { setSubmitting, resetForm }) => {
       emailjs
-        .send("service_ji1s77s", "template_amammcn", {
-          from_name: values.name,
-          from_email: values.email,
-          message: values.message,
-        })
+        .send(
+          "service_ji1s77s",
+          "template_amammcn",
+          {
+            from_name: values.name,
+            from_email: values.email,
+            message: values.message,
+          },
+          "BB-QhNOKHgReTtgpU"
+        )
         .then(
           (response) => {
             console.log("SUCCESS!", response.status, response.text);
@@ -83,9 +88,9 @@ export const Contact = () => {
             value={formik.values.name}
             onChange={formik.handleChange}
           />
-          {formik.touched.name && formik.errors.name ? (
+          {formik.touched.name && formik.errors.name && (
             <div className="text-red-600">{formik.errors.name}</div>
-          ) : null}
+          )}
         </div>
         <div className="mb-6 flex flex-wrap">
           <input
@@ -96,9 +101,9 @@ export const Contact = () => {
             value={formik.values.email}
             onChange={formik.handleChange}
           />
-          {formik.touched.email && formik.errors.email ? (
-            <div className="text-red-600">{formik.errors.email}</div>
-          ) : null}
+          {formik.touched.email && formik.errors.email && (
+            <p className="text-red-600">{formik.errors.email}</p>
+          )}
         </div>
         <div className="mb-6 flex flex-wrap">
           <textarea
@@ -109,14 +114,14 @@ export const Contact = () => {
             value={formik.values.message}
             onChange={formik.handleChange}
           />
-          {formik.touched.message && formik.errors.message ? (
-            <div className="text-red-600">{formik.errors.message}</div>
-          ) : null}
+          {formik.touched.message && formik.errors.message && (
+            <p className="text-red-600">{formik.errors.message}</p>
+          )}
         </div>
         <div className="flex flex-wrap">
           <button
             type="submit"
-            className="w-full rounded bg-teal-500 px-8 py-2 font-bold text-white hover:bg-teal-700"
+            className="w-full cursor-pointer rounded bg-teal-500 px-8 py-2 font-bold text-white hover:bg-teal-700"
             disabled={formik.isSubmitting}
           >
             Send

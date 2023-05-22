@@ -4,6 +4,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=GFS+Didot&family=Kalam:wght@700&family=Permanent+Marker&family=Rubik+Pixels&display=swap");
 
+.about-section,
+.my-stack-section,
+.portfolio-section,
+.contact-section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
 body {
   padding: 0;
   margin: 0;

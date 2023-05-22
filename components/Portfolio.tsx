@@ -7,12 +7,12 @@ export const Portfolio = () => {
   return (
     <section
       id="portfolio"
-      className="z-1 h-auto w-full min-w-[400px] py-10 px-4 md:py-10 md:px-4 lg:px-32"
+      className="z-1 h-auto w-full min-w-[400px] py-10 px-4 md:py-10 md:px-4 lg:px-5 xl:px-20"
     >
       <h2 className="my-5 text-center  text-3xl font-extrabold text-white">
         My Portfolio
       </h2>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
         {portfolioArr.map((event) => {
           return <Article key={event.id} {...event} />;
         })}

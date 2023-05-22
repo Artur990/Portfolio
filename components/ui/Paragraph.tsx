@@ -8,7 +8,7 @@ export const paragraphVariants = cva(
   {
     variants: {
       size: {
-        default: "text-base sm:text-lg",
+        default: "text-xl sm:text-3xl",
         sm: "text-sm sm:text-base",
       },
     },

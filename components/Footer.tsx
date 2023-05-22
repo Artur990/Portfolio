@@ -20,7 +20,7 @@ export const Footer = () => {
           <div className="text-center md:text-right">
             <h3 className="text-lg font-semibold">Social Media</h3>
             <div className="flex justify-center space-x-4 md:justify-end">
-              <a href="#" className="mr-4 hover:text-gray-300">
+              <a href="#" className="mr-2 hover:text-gray-300">
                 <AiFillGithub className="h-7 w-7" />
               </a>
               <a href="#" className="mr-4 h-6 w-6 hover:text-gray-300">

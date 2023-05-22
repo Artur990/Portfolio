@@ -20,7 +20,7 @@ export default function Home() {
         <div className="relative">
           <Header />
           <About />
-          <MyStack />
+          {/* <MyStack /> */}
           <Portfolio />
           <Contact />
           <Footer />

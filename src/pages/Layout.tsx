@@ -10,11 +10,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         width={400}
         height={400}
         alt="bachGround"
-        src="/background.png"
+        src="/background1.jpg"
         className=" fixed z-0 h-full w-full "
       />
       <Nav />
-      <main className="mx-2 font-poppins lg:mx-10 ">{children}</main>
+      <main className=" mx-2 font-poppins lg:mx-10 xl:mx-16 2xl:mx-24">
+        {children}
+      </main>
     </div>
   );
 }
